@@ -7,7 +7,7 @@ const wallet = provider.getSigner();
 
 const storage = await init(wallet);
 
-const blob = new Blob(["Hello, world!"], { type: "text/plain" });
+const blob = new Blob([""], { type: "text/plain" });
 const file = new File([blob], "welcome.txt", {
   type: "text/plain",
   lastModified: new Date().getTime(),
